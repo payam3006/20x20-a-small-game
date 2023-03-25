@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Small Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="h1">
+        <h1>Hangman</h1>
+        <p>Find the hidden Word - Enter a Letter</p>
+    </div>
+    <main>
+        <div class="hanger">
+            <svg height="250" width="250">
+                <line x1="0" y1="250" x2="70" y2="250" style="stroke:white;stroke-width:4" />
+                <line x1="35" y1="250" x2="35" y2="0" style="stroke:white;stroke-width:4" />
+                <line x1="35" y1="0" x2="105" y2="0" style="stroke:white;stroke-width:4" />
+                <line x1="105" y1="0" x2="105" y2="30" style="stroke:white;stroke-width:4" />
+
+                <circle id="1" class="hidden" cx="105" cy="55" r="25" stroke="white" stroke-width="4" fill="#21476e" />
+                <!-- <circle cx="105" cy="55" r="25" stroke="black" stroke-width="4" fill="red" /> -->
+                <line id="2" class="hidden" x1="105" y1="80" x2="105" y2="150" style="stroke:white;stroke-width:4" />
+                <line id="3" class="hidden" x1="105" y1="120" x2="80" y2="90" style="stroke:white;stroke-width:4" />
+                <line id="4" class="hidden" x1="105" y1="120" x2="130" y2="90" style="stroke:white;stroke-width:4" />
+                <line id="5" class="hidden" x1="105" y1="150" x2="80" y2="190" style="stroke:white;stroke-width:4" />
+                <line id="6" class="hidden" x1="105" y1="150" x2="130" y2="190" style="stroke:white;stroke-width:4" />
+            </svg>
+        </div>
+        <div id="wrongLetters" class="wrongLetters">
+            <!-- <div class="wrongLettersTitle">Wrong</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div>
+            <div class="wrongLetter">z,</div> -->
+
+        </div>
+    </main>
+    <div id="inputLetters">
+
+    </div>
+    <div id="notification" class="notification out">
+        You have already entered this letter
+    </div>
+    <div id="winBox" class="winBox ">
+        Congrats! you won! &#128525
+        <div id="resetBtn" onclick="reset()">Play Again</div>
+    </div>
+    <div id="loseBox" class="loseBox ">
+        Sorry! you lost! &#128528
+        <div id="resetBtn" onclick="reset()">Play Again</div>
+
+    </div>
+    <script src=" script.js">
+    </script>
+</body>
+
+</html>
