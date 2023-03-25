@@ -39,7 +39,7 @@ reset();
 
 function setAnswer() {
   const answer = words[Math.floor(Math.random() * words.length)];
-
+  answerArray = [];
   for (let i = 0; i < answer.length; i++) {
     answerArray.push(answer[i]);
   }
