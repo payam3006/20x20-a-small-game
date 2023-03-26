@@ -19,6 +19,8 @@ body {
   vertical-align: middle;
   background-color: #ff0040;
   font-size: x-large;
+  visibility: hidden;
+
   scale: 0;
   transition: 0.6s;
 }
@@ -32,6 +34,7 @@ body {
   vertical-align: middle;
   background-color: #0099ff;
   font-size: x-large;
+  visibility: hidden;
   scale: 0;
   transition: 0.6s;
 }
@@ -99,6 +102,7 @@ main {
 }
 
 .show {
+  visibility: visible;
   scale: 1;
 }
 

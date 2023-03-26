@@ -106,9 +106,9 @@ function action(event) {
       } else {
         if (wrongLetters.includes(letter)) {
           notification.classList.remove("out");
-          setInterval(function () {
+          setTimeout(function () {
             notification.classList.add("out");
-          }, 4200);
+          }, 1000);
         } else {
           if (mistakeNum == maxMistake) {
             loseBox.classList.add("show");
